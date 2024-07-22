@@ -1,7 +1,24 @@
-* {
-    background-color: pink;
+body {
+    background-color: #ebebeb;
+    max-width: 900px;
+    margin: 3rem auto;
+    text-align: center;
 }
 
-h1 {
-    color: darkred;
+#countdown {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    padding: 3rem;
+}
+
+#countdown div {
+    display: inline-block;
+    margin: 0 .5rem;
+}
+
+#countdown div span {
+    color: maroon;
 }
