@@ -16,7 +16,9 @@ function updateCountdown() {
     console.log(hours)
     let minutes = Math.floor(diff % (1000 * 60 * 60) / (1000 * 60))
     console.log(minutes)
-    let seconds = Math.floor(diff % (1000 * 60))
+
+    let seconds = Math.floor((diff % (1000 * 60))/ 1000)
+
     console.log(seconds)
 
     daysContainer.innerHTML = days + "<span> Days</span>"
@@ -26,5 +28,6 @@ function updateCountdown() {
 
 
 }
-updateCountdown();
+
+setInterval(updateCountdown, 1000);
 console.log("hello there");
