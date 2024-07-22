@@ -25,5 +25,8 @@ function updateCountdown() {
 
 }
 
+
+// let justOneDay = daysContainer.innerHTML = "hello there"
 setInterval(updateCountdown, 1000);
+// updateCountdown();
 console.log("hello there");
