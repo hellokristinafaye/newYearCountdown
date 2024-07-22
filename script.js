@@ -15,7 +15,7 @@ function updateCountdown() {
     let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
     let seconds = Math.floor((diff % (1000 * 60))/ 1000)
 
-    console.log(seconds)
+    // console.log(seconds)
 
     daysContainer.innerHTML = days + "<span> Days</span>"
     hoursContainer.innerHTML = hours + "<span> Hours</span>"
@@ -30,3 +30,10 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 // updateCountdown();
 console.log("hello there");
+
+function sayHi() {
+    alert("Hello");
+}
+
+// global functions are methods of the global object:
+sayHi();
